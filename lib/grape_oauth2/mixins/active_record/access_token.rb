@@ -11,7 +11,8 @@ module Grape
                               foreign_key: :client_id
 
           belongs_to :resource_owner, class_name: Grape::OAuth2.config.resource_owner_class_name,
-                                      foreign_key: :resource_owner_id
+                                      foreign_key: :resource_owner_id,
+                                      optional: true
 
           validates :token, presence: true, uniqueness: true
 
