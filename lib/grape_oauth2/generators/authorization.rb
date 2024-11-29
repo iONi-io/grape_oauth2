@@ -28,7 +28,7 @@ module Grape
           def error_response(error)
             response = Rack::Response.new
             response.status = error.status
-            response.header['Content-Type'] = 'application/json'
+            response.headers['Content-Type'] = 'application/json'
             response.write(JSON.dump(Rack::OAuth2::Util.compact_hash(error.protocol_params)))
 
             Grape::OAuth2::Responses::Authorization.new(response.finish)

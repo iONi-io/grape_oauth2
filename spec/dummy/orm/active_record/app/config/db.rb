@@ -1,4 +1,5 @@
 OTR::ActiveRecord.configure_from_hash!(adapter: 'sqlite3', database: ':memory:')
+OTR::ActiveRecord.establish_connection!
 
 ::ActiveRecord.default_timezone = :utc
 ::ActiveRecord::Base.logger = ENV['RAILS_ENV'] == 'test' ? nil : Logger.new(STDOUT)

@@ -31,7 +31,7 @@ require 'grape_oauth2'
 # Require Rack app by ORM
 require File.expand_path("../dummy/orm/#{ENV['ORM']}/app/twitter", __FILE__)
 
-TWITTER_APP = Rack::Builder.parse_file(File.expand_path("../dummy/orm/#{ENV['ORM']}/config.ru", __FILE__)).first
+TWITTER_APP = Rack::Builder.parse_file(File.expand_path("../dummy/orm/#{ENV['ORM']}/config.ru", __FILE__))
 
 require 'support/api_helper'
 
