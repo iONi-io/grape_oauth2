@@ -15,7 +15,7 @@ module Grape
       # Minor version of the gem
       MINOR = 3
       # Tiny version of the gem
-      TINY  = 1
+      TINY  = 2
 
       # Full gem version string
       STRING = [MAJOR, MINOR, TINY].compact.join('.')
