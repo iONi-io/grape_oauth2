@@ -13,7 +13,7 @@ module Grape
       # Major version of the gem
       MAJOR = 0
       # Minor version of the gem
-      MINOR = 2
+      MINOR = 3
       # Tiny version of the gem
       TINY  = 1
 
